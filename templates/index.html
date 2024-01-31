@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8" />
+<title>Car Details App</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+
+<body>
+<h1>Car Details App</h1>
+<form action="/search" method="POST">
+<label for="car_model">Car Model:</label>
+<input type="text" name="car_model" id="car_model" />
+
+<label for="fuel_type">Fuel Type:</label>
+<input type="radio" name="fuel_type" id="petrol" value="petrol" />
+<label for="petrol">Petrol</label>
+<input type="radio" name="fuel_type" id="diesel" value="diesel" />
+<label for="diesel">Diesel</label>
+
+<input type="submit" value="Search" />
+</form>
+</body>
+
+</html>
+
+
+
