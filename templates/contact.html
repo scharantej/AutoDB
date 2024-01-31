@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8" />
+<title>Car Details App - Contact</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+
+<body>
+<h1>Contact Us</h1>
+<form action="/contact" method="POST">
+<label for="name">Name:</label>
+<input type="text" name="name" id="name" />
+
+<label for="email">Email:</label>
+<input type="email" name="email" id="email" />
+
+<label for="message">Message:</label>
+<textarea name="message" id="message"></textarea>
+
+<input type="submit" value="Send" />
+</form>
+</body>
+
+</html>
+
