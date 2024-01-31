@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8" />
+<title>Car Details App - Results</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+
+<body>
+<h1>Car Details</h1>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Price</th>
+<th>Mileage</th>
+<th>Fuel Type</th>
+</tr>
+</thead>
+<tbody>
+{% for car in car_details %}
+<tr>
+<td>{{ car.name }}</td>
+<td>{{ car.price }}</td>
+<td>{{ car.mileage }}</td>
+<td>{{ car.fuel_type }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</body>
+
+</html>
+
+
+
